@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Volim te Jovana</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+    #poruka {
+      display: none;
+      font-size: 2em;
+      color: red;
+      margin-top: 20px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="prikaziPoruku()">Klikni me</button>
+  <div id="poruka">Volim te Jovana</div>
+
+  <script>
+    function prikaziPoruku() {
+      document.getElementById("poruka").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
